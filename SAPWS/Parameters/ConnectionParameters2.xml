@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Parameters>
+
+  <Parameter>
+    <name>DBUserName</name>
+    <descripcion>DBUserName</descripcion>
+    <value>sa</value>
+  </Parameter>
+
+  <Parameter>
+    <name>DBUserPass</name>
+    <descripcion>DBUserPass</descripcion>
+    <value>root</value>
+  </Parameter>
+  
+  <Parameter>
+    <name>B1UserName</name>
+    <descripcion>B1UserName</descripcion>
+    <value>manager</value>
+  </Parameter>
+  
+  <Parameter>
+    <name>B1UserPass</name>
+    <descripcion>B1UserPass</descripcion>
+    <value>1234</value>
+  </Parameter>
+  
+  <Parameter>
+    <name>CompanyDB</name>
+    <descripcion>CompanyDB</descripcion>
+    <value>SBODemoCL</value>
+  </Parameter>
+  
+  <Parameter>
+    <name>CompanyServer</name>
+    <descripcion>CompanyServer</descripcion>
+    <value>DESKTOP-JUIIMK1\SQL2012</value>
+  </Parameter>
+  
+  <Parameter>
+    <name>LicenseServer</name>
+    <descripcion>LicenseServer</descripcion>
+    <value>DESKTOP-JUIIMK1:30000</value>
+  </Parameter>
+  
+  <Parameter>
+    <name>DBServerType</name>
+    <descripcion>DBServerType</descripcion>
+    <value>dst_MSSQL2012</value>
+  </Parameter>
+</Parameters>
+
+
+
