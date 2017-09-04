@@ -12,31 +12,31 @@ namespace SAPWS.XMLMODEL.Payment
     public class PaymentXMLModel
     {
         [MaxLength(9)]
-        public String DocType { get; set; }//TODOG:
-        public String DocDate { get; set; }
-        public String TaxDate { get; set; }
-        public String DueDate { get; set; }
+        public String DocType { get; set; } = String.Empty;
+        public String DocDate { get; set; } = String.Empty;
+        public String TaxDate { get; set; } = String.Empty;
+        public String DueDate { get; set; } = String.Empty;
         [MaxLength(15)]
-        public String CardCode { get; set; }
+        public String CardCode { get; set; } = String.Empty;
         [MaxLength(3)]
-        public String DocCurrency { get; set; }
-        public Int32 DocRate { get; set; }
+        public String DocCurrency { get; set; } = String.Empty;
+        public Int32 DocRate { get; set; } = 0;
         [MaxLength(8)]
-        public String CounterReference { get; set; }
+        public String CounterReference { get; set; } = String.Empty;
         [MaxLength(254)]
-        public String Remarks { get; set; }
-        public Double CashSum { get; set; }
+        public String Remarks { get; set; } = String.Empty;
+        public Double CashSum { get; set; } = 0;
 
         #region UserFields
 
         [MaxLength(3)]
-        public String U_BPP_MPPG { get; set; }
+        public String U_BPP_MPPG { get; set; } = String.Empty;
         [MaxLength(2)]
-        public String U_MSS_MPSA { get; set; }
+        public String U_MSS_MPSA { get; set; } = String.Empty;
 
         #endregion
 
         [XmlArray("PaymentInvoices")]
-        public List<PaymentInvoiceXMLModel> PaymentInvoices { get; set; }
+        public List<PaymentInvoiceXMLModel> PaymentInvoices { get; set; } = new List<PaymentInvoiceXMLModel>();
     }
 }

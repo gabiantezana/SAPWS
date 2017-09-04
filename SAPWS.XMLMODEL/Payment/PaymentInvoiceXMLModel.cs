@@ -11,14 +11,14 @@ namespace SAPWS.XMLMODEL.Payment
     [XmlType("PaymentInvoice")]
     public class PaymentInvoiceXMLModel
     {
-        public Int32 LineNum { get; set; }
-        public Int32 DocEntry { get; set; }
-        public Double SumApplied { get; set; }
+        public Int32 LineNum { get; set; } = 0;
+        public Int32 DocEntry { get; set; } = 0;
+        public Double SumApplied { get; set; } = 0;
         [MaxLength(15)]
-        public String InvoiceType { get; set; }
-        public Int32 InstallmentId { get; set; }
-        public String DistributionRule { get; set; }
-        public String DistributionRule2 { get; set; }
-        public String DistributionRule3 { get; set; }
+        public String InvoiceType { get; set; } = String.Empty;
+        public Int32 InstallmentId { get; set; } = 0;
+        public String DistributionRule { get; set; } = String.Empty;
+        public String DistributionRule2 { get; set; } = String.Empty;
+        public String DistributionRule3 { get; set; } = String.Empty;
     }
 }

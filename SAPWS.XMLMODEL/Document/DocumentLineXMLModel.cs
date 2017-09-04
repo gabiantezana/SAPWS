@@ -15,41 +15,24 @@ namespace SAPWS.XMLMODEL.Document
 
         public Int32 LineNum { get; set; }
         [MaxLength(50)]
-        public String ItemCode { get; set; }
-        public Int32 Quantity { get; set; }
-        public Double UnitPrice { get; set; }
-        public Double Price { get; set; }
+        public String ItemCode { get; set; } = String.Empty;
+        public Int32 Quantity { get; set; } = 0;
+        public Double UnitPrice { get; set; } = 0;
+        public Double Price { get; set; } = 0;
         [MaxLength(8)]
-        public String TaxCode { get; set; }
+        public String TaxCode { get; set; } = String.Empty;
         [MaxLength(8)]
-        public String WarehouseCode { get; set; }
+        public String WarehouseCode { get; set; } = String.Empty;
         [MaxLength(20)]
-        public String CostingCode { get; set; }
+        public String CostingCode { get; set; } = String.Empty;
         [MaxLength(20)]
-        public String CostingCode2 { get; set; }
+        public String CostingCode2 { get; set; } = String.Empty;
         [MaxLength(20)]
         public String CostingCode3 { get; set; }
-        public virtual Int32 BaseType { get; set; }
-        public virtual Int32 BaseEntry { get; set; }
-        public virtual Int32 BaseLine { get; set; }
-
-
-        #region DownPayment
-
-        public Int32 DocEntry { get; set; }
-        public Double SumApplied { get; set; }
-        public String InvoiceType { get; set; }
-        public Int32 InstalimentId { get; set; }
-        public String DistributionRule { get; set; }
-        public String DistributionRule2 { get; set; }
-        public String DistributionRule3 { get; set; }
-
+        public virtual Int32 BaseType { get; set; } = 0;
+        public virtual Int32 BaseEntry { get; set; } = 0;
+        public virtual Int32 BaseLine { get; set; } = 0;
         #endregion
-
-        #endregion
-
-
-
 
     }
 }

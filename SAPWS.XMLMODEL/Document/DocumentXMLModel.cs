@@ -12,62 +12,62 @@ namespace SAPWS.XMLMODEL.Document
     [XmlRoot("object")]
     public class DocumentXMLModel
     {
-        public String DocumentType { get; set; }
+        public String DocumentType { get; set; } = String.Empty;
 
         [Required]
-        public Int32 DocEntry { get; set; }
+        public Int32 DocEntry { get; set; } = 0;
 
         [Required]
         [MaxLength(15)]
-        public String CardCode { get; set; }
+        public String CardCode { get; set; } = String.Empty;
 
         [Required]
         [MaxLength(3)]
-        public String DocCurrency { get; set; }
+        public String DocCurrency { get; set; } = String.Empty;
 
         [Required]
-        public String DocDate { get; set; }
+        public String DocDate { get; set; } = String.Empty;
 
-        public String DueDate { get; set; }
-
-        [Required]
-        public String DocDueDate { get; set; }
+        public String DueDate { get; set; } = String.Empty;
 
         [Required]
-        public String TaxDate { get; set; }
+        public String DocDueDate { get; set; } = String.Empty;
 
         [Required]
-        public Int32 PaymentGroupCode { get; set; }
+        public String TaxDate { get; set; } = String.Empty;
+
+        [Required]
+        public Int32 PaymentGroupCode { get; set; } = 0;
 
         [MaxLength(254)]
-        public String Comments { get; set; }
+        public String Comments { get; set; } = String.Empty;
 
-        public Double TotalDiscount { get; set; }
+        public Double TotalDiscount { get; set; } = 0;
 
-        public Double TotalDiscountFC { get; set; }
+        public Double TotalDiscountFC { get; set; } = 0;
 
 
         #region UserFields
 
         [Required]
         [MaxLength(2)]
-        public String U_BPP_MDTD { get; set; }
+        public String U_BPP_MDTD { get; set; } = String.Empty;
 
         [MaxLength(4)]
-        public String U_BPP_MDSD { get; set; }
+        public String U_BPP_MDSD { get; set; } = String.Empty;
 
         [MaxLength(15)]
-        public String U_BPP_MDCD { get; set; }
+        public String U_BPP_MDCD { get; set; } = String.Empty;
 
         [MaxLength(2)]
-        public String U_MSS_TVTA { get; set; }
+        public String U_MSS_TVTA { get; set; } = String.Empty;
 
         [MaxLength(7)]
-        public String U_MSS_TIDA { get; set; }
+        public String U_MSS_TIDA { get; set; } = String.Empty;
 
-        public String U_BPP_MDTS { get; set; }
+        public String U_BPP_MDTS { get; set; } = String.Empty;
 
-        public String U_BPP_SDocDate { get; set; }
+        public String U_BPP_SDocDate { get; set; } = String.Empty;
 
 
 

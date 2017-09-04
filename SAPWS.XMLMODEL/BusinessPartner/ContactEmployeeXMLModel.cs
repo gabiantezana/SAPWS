@@ -12,22 +12,22 @@ namespace SAPWS.XMLMODEL.BusinessPartner
     public class ContactEmployeeXMLModel
     {
         [MaxLength(50)]
-        public String Name { get; set; }
+        public String Name { get; set; } = String.Empty;
 
         [MaxLength(20)]
-        public String Phone1 { get; set; }
+        public String Phone1 { get; set; } = String.Empty;
 
         [MaxLength(20)]
-        public String Phone2 { get; set; }
+        public String Phone2 { get; set; } = String.Empty;
 
         [MaxLength(20)]
-        public String MobilePhone { get; set; }
+        public String MobilePhone { get; set; } = String.Empty;
 
         [MaxLength(100)]
-        public String E_Mail { get; set; }
+        public String E_Mail { get; set; } = String.Empty;
 
         [MaxLength(100)]
-        public String Gender { get; set; }
+        public String Gender { get; set; } = String.Empty;
 
     }
 }

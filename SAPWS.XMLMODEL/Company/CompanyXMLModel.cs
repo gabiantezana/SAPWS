@@ -10,30 +10,18 @@ namespace SAPWS.VIEWMODEL.Company
     [XmlRoot("object")]
     public class CompanyXMLModel
     {
-        public Boolean? XMLAsString { get; set; }
-        public String Server { get; set; }
-        public String LicenseServer { get; set; }
-        public String DbServerType { get; set; }
-        public String DbUserName { get; set; }
-        public String DbPassword { get; set; }
-        public String CompanyDB { get; set; }
-        public String UserName { get; set; }
-        public String Password { get; set; }
-        public String language { get; set; }
-        public Boolean? UseTrusted { get; set; }
+        public Boolean? XMLAsString { get; set; } = null;
+        public String Server { get; set; } = String.Empty;
+        public String LicenseServer { get; set; } = String.Empty;
+        public String DbServerType { get; set; } = String.Empty;
+        public String DbUserName { get; set; } = String.Empty;
+        public String DbPassword { get; set; } = String.Empty;
+        public String CompanyDB { get; set; } = String.Empty;
+        public String UserName { get; set; } = String.Empty;
+        public String Password { get; set; } = String.Empty;
+        public String language { get; set; } = String.Empty;
+        public Boolean? UseTrusted { get; set; } = null;
 
-        public CompanyXMLModel()
-        {
-            XMLAsString = null;
-            LicenseServer = String.Empty;
-            DbServerType = String.Empty;
-            DbUserName = String.Empty;
-            DbPassword = String.Empty;
-            CompanyDB = String.Empty;
-            UserName = String.Empty;
-            Password = String.Empty;
-            language = String.Empty;
-            UseTrusted = null;
-        }
+        public CompanyXMLModel() { }
     }
 }
