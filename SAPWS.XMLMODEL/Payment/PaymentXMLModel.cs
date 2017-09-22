@@ -26,6 +26,7 @@ namespace SAPWS.XMLMODEL.Payment
         [MaxLength(254)]
         public String Remarks { get; set; } = String.Empty;
         public Double CashSum { get; set; } = 0;
+        public Double BankChargeAmount { get; set; } = 0;
 
         #region UserFields
 

@@ -32,6 +32,7 @@ namespace SAPWS.VIEWMODEL.Payment
         public String Remarks { get; set; }
         public Double CashSum { get; set; }
         public String CashAccount { get; set; }
+        public Double BankChargeAmount { get; set; } 
 
         #region UserFields
 

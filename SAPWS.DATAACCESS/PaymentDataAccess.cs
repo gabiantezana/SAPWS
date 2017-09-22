@@ -33,6 +33,7 @@ namespace SAPWS.DATAACCESS
             payment.Remarks = model.Remarks;
             payment.CashSum = model.CashSum;
             payment.CashAccount = model.CashAccount;
+            payment.BankChargeAmount = model.BankChargeAmount;
 
             SetUserFields(model, ref payment);
 
