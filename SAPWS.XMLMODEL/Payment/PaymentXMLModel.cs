@@ -20,7 +20,7 @@ namespace SAPWS.XMLMODEL.Payment
         public String CardCode { get; set; } = String.Empty;
         [MaxLength(3)]
         public String DocCurrency { get; set; } = String.Empty;
-        public Int32 DocRate { get; set; } = 0;
+        public Double DocRate { get; set; } = 0;
         [MaxLength(8)]
         public String CounterReference { get; set; } = String.Empty;
         [MaxLength(254)]
